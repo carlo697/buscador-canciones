@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Letras de Canciones</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <img class="fondo" src="img/background.jpg" alt="">
+
+    <main id="contenido" class="contenido">
+        <h1>Buscador de Canciones</h1>
+        <div class="contenedor">
+            <div id="buscar" class="buscar">
+                <h2>Búsqueda</h2>
+                <p>Busca una canción escribiendo su artista y el nombre.</p>
+                <form action="#" id="formulario-buscar">
+                    <div class="input">
+                        <label for="artista">Artista: </label>
+                        <input type="text" id="artista" placeholder="Artista">
+                    </div>
+                    <div class="input">
+                        <label for="cancion">Canción: </label>
+                        <input type="text" id="cancion" placeholder="Nombre Canción">
+                    </div>
+
+                    <div class="input enviar">
+                        <input type="submit" value="Buscar">
+                    </div>
+                </form>
+
+                <div id="mensajes"></div>
+            </div>
+            
+            <div id="resultado-contenedor" class="letra-resultado">
+                    <h2></h2>
+                    <div id="resultado"></div>
+            </div>
+
+            
+        </div>
+    </main>
+
+    
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
